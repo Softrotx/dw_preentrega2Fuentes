@@ -1,0 +1,345 @@
+/* colores 
+#163d5b
+#a2ccc2
+#2d8281
+#e6b8c2
+#c77881
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Indie+Flower&display=swap');
+/* font-family: 'Indie Flower', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+html {
+    /* 1em = 10px */
+    font-size: 62.5%; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error404{
+    width: 100%;
+    height: 1000px;
+    
+    background-image: url(../medios/404.png), linear-gradient(
+        to bottom,
+        #a2ccc2,
+        #163d5b
+    );
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+/* titulos y subtitulos */
+h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 40px;
+}
+h3{
+    font-size: 2.5em;
+}
+p{
+    font-size: 2em;
+}
+h4{
+    font-size: 1.8em;
+    text-align: center;
+}
+/* formularios */
+label{
+    font-size: 2em;
+}
+/* INDEX[line 13] header */
+header {
+    height: 100px;
+    background-color: #a2ccc2;
+    display: flex;
+    align-items: center;
+
+
+}
+
+header a {
+    
+    
+}
+header img {
+    width: 350px;
+    
+}
+
+header ul {
+    list-style-type: none;
+    font-size: 2em;
+    
+/* menú principal */   
+}
+nav {
+    font-size: 1em;
+    
+
+    
+
+}
+.menuPrincipal{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.menuPrincipal ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+
+
+}
+nav a{
+    text-decoration: none;
+}
+.menuSecundario{
+    width: 25%;
+}
+
+.menuSecundario ul{
+    display: flex;
+    
+    justify-content: space-evenly;
+
+}
+
+
+/* INDEX[line 43] main */
+main section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.videoPromesa{
+    background-color: white;
+    
+    
+}
+.videoPromesa p{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    
+}
+.videoPromesa video{
+    width:100%
+    
+    
+
+}
+.promesa {
+    
+    margin: 100px 0px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* INDEX[line 51]: imagen con texto y registro a la derecha  */
+.infoRegistro{
+    background-color: #e6b8c2;
+    font-family: 'Indie Flower', cursive;
+    flex-direction: row;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.infoRegistroLeft{
+    width: 40%;
+}
+.infoRegistroLeft img {
+    width:350px
+    
+}
+.infoRegistro a {
+    font-size: 2.4em;
+
+}
+.infoRegistroRight{
+    width: 50%;
+}
+
+/*  INDEX[line 63]:mensajes de las personas en futuro carrusel */
+
+.testimonios {
+    width: 100%;
+    padding-bottom: 50px;
+    font-size: 0.7em;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+
+
+/* footer */
+footer{
+    background-color: #163d5b;
+    text-align:center;
+    color: white;
+
+}
+footer img {
+    width:30%;
+
+}
+
+footer  a img{
+    width: 58px;
+}
+
+/* expositores[line] */
+
+.categorias{
+    background-color:#c77881 ;
+
+}
+.categorias ul li{
+    list-style-type: none;
+    font-size: 2em;
+}
+.categorias ul a{
+    color: white;
+
+}
+.expositores div{
+    border-style:outset;
+    background-color: #2d8281;
+    color: white;
+}
+
+.expositores img{
+    width: 300px;
+}
+.expositores a img {
+    width: 56px;
+}
+
+.formulario{
+    width: 20%;
+    text-align: center;
+    margin-left: 550px;
+    margin-right: 500px;
+    height: 300px;
+}
+.clases{
+    text-align: center;
+}
+.fiveStar {
+    width: 100px;
+    text-align: center;
+}
+.recomendados {
+    display: flex;
+}
+
+.recomendados div {
+    flex-wrap: wrap;
+    width: 300px;
+    flex-direction: column;
+    
+}
+.recomendados a img{
+    width: 300px;
+}
+
+@media only screen and (max-width:500px){
+
+    header img {
+        width: 100%
+    }
+    
+}
+
+
+/* registro [] */
+
+form { 
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(6, 75px);
+    grid-template-rows: repeat(10, 50px);
+    grid-area: 
+    'lname name name lapell apell apell'
+    'luser luser user user user user'
+    'lmail lmail mail mail mail mail'
+    'lconfmail lconfmail confmail confmail confmail confmail'
+    'lpass lpass pass pass pass pass'
+    'lcpass lcpass confpass confpass confpass'
+    'box conf conf conf conf conf'
+    '0 0 reg reg 0 0';
+}
+.lName {
+    grid-area: lname;
+}
+.name {
+    grid-area: name;
+}
+.LastName {
+    grid-area: lapell;
+}
+.lastName {
+    grid-area: apell;
+}
+.lUser {
+    grid-area: luser;
+}
+.user {
+    grid-area: user;
+}
+.lEmail {
+    grid-area: lmail;
+}
+.email {
+    grid-area: mail;
+}
+.lConfEmail {
+    grid-area: lconfmail;
+    
+}
+.confEmail {
+    grid-area: confmail;
+}
+.lPass {
+    grid-area: lpass;
+}
+.pass {
+    grid-area: pass;
+}
+.lConfPass {
+    grid-area: lcpass;
+}
+.confPass {
+    grid-area: confpass;
+}
+
