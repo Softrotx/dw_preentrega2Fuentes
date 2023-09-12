@@ -63,67 +63,44 @@ label{
     font-size: 2em;
 }
 /* INDEX[line 13] header */
+
 header {
-    height: 100px;
-    background-color: #a2ccc2;
+    background-color: white ;
     display: flex;
-    align-items: center;
-    z-index: 10;
-    position: sticky;
-    top: 0px;
-    
-
-
+    justify-content: space-between;
+ 
 }
 
+.navbar {
+    display: flex;
 
-header img {
-    width: 350px;
+
+    
     
 }
+.navbar a{
 
-header ul {
-    list-style-type: none;
     font-size: 2em;
     
-/* menú principal */   
 }
-nav {
-    font-size: 1em;
+.menuPrincipal {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
     
-
-    
+}
+.menuPrincipal div{
+    width: 100%;
+    display: flex;
+    align-items: start;
 
 }
-.menuPrincipal{
-    width: 70%;
+.menuSecundario {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-}
-.menuPrincipal ul{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    
-
-
-}
-nav a{
-    text-decoration: none;
-}
-.menuSecundario{
-    width: 25%;
 }
 
-.menuSecundario ul{
-    display: flex;
-    
-    justify-content: space-evenly;
-
-}
 
 
 /* INDEX[line 43] main */
@@ -189,10 +166,14 @@ main section{
 /*  INDEX[line 63]:mensajes de las personas en futuro carrusel */
 
 .testimonios {
+
+}
+.testimonios div{
     width: 100%;
     padding-bottom: 50px;
     font-size: 0.7em;
-
+    display: flex;
+    justify-content: center;
     
 }
 .carousel{
@@ -274,13 +255,15 @@ footer  a img{
 .recomendados a img{
     width: 300px;
 }
-
+@media only screen and (max-width: 991px){
+    .botonMenu {
+        order: 3;
+        
+        
+    }
+}
 @media only screen and (max-width:500px){
 
-    header img {
-        width: 100%
-    }
-    
 }
 
 
