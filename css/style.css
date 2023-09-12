@@ -256,11 +256,7 @@ footer  a img{
     width: 300px;
 }
 @media only screen and (max-width: 991px){
-    .botonMenu {
-        order: 3;
-        
-        
-    }
+
 }
 @media only screen and (max-width:500px){
 
