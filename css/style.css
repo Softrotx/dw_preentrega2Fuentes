@@ -118,11 +118,7 @@ header {
 
 
 }
-.menuPrincipal a:hover {
-    
-    
 
-}
 .btn-primary {
     width: 100px;
     font-size: 1.5rem;
@@ -318,10 +314,7 @@ footer a img {
     color: white;
 
 }
-.dropdown-menu{
-    /* display: flex; */
 
-}
 .categorias h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
