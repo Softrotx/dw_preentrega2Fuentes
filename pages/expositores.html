@@ -1,98 +1,260 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salud de la Nueva Era</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- css propio -->
     <link rel="stylesheet" href="../css/style.css">
+
+
+    <title>Salud de la Nueva Era
+    </title>
+
 </head>
+
 <body>
-    <header>
+    <header class="sticky-top">
         <!-- Logo + nombre -->
-        <a href="../index.html"><img src="../medios/marcalogocolor.png" alt="logo Salud de la Nueva Era"></a>
-        
-        <!-- menú principal -->
-        <nav class=" menuPrincipal">
-            <ul>
-                <li><a href="./expositores.html">Expositores</a>
-                </li>
-                <li>
-                    <a href="./clases.html">Clases</a>
-                </li>
-                <li>
-                    <a href="./talleres.html">Talleres</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="logo">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="../medios/logo.png" alt="Logo" width="40" class="">
+                    Salud Nueva Era
+                </a>
+            </div>
+            <!-- menu central & burger -->
         </nav>
-            <!-- menú secundario -->
-        <nav class="menuSecundario">
-            <ul>
-                <li>
-                    <a href="./cuenta.html">Cuenta</a>
-                </li>
-                <li>
-                    <a href="./checkout.html">Checkout</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg menuPrincipal">
+            <div class="botonMenu">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./expositores.html">Expositores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./clases.html">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./talleres.html">Talleres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- menu lateral -->
+
+        <nav class="navbar menuSecundario">
+            <div class="menuSecundario">
+                <button class="btn btn-primary coloresHover" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cuenta</button>
+
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h2 class="offcanvas-title" id="offcanvasRightLabel">Login</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav flex-column">
+                            <li>
+                                <form id="loginUser" class="login">
+                                    <input type="email" name="inputEmail" id="inputEmail"
+                                        placeholder="Ingrese su correo">
+                                    <input type="password" name="inputPassword" id="inputPassword"
+                                        placeholder="Ingrese su contraseña">
+                                    <button href="./pages/cuenta.html" type="submit">Ingresar</button>
+                                </form>
+                                <a href="./registro.html">Registrar cuenta</a>
+                            </li>
+                            <li>
+                                <a class="checkOut" href="./checkout.html">Checkout</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
         </nav>
     </header>
     <main>
+        
         <section class="categorias">
-            <!-- categorias y busqueda -->
-                <ul>
-                    <li>
-                        <a href="">Categoría1</a>
-                    </li>
-                    <li>
-                        <a href="">Categoria2</a>
-                    </li>
-                    <li>
-                        <a href="">Categoria3</a>
-                    </li>
-                    <li>
-                        <a href="">Categoria4</a>
-                    </li>
-                    <li>
-                        <a href="">Categoria5</a>
-                    </li>   
+            <h1>Expositores</h1>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Profesionales Holisticos e Integrativos
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Medicina</a></li>
+                    <li><a class="dropdown-item" href="#">Odontolgía</a></li>
+                    <li><a class="dropdown-item" href="#">Matronería</a></li>
+                    <li><a class="dropdown-item" href="#">Kinesiología</a></li>
+                    <li><a class="dropdown-item" href="#">Psicología</a></li>
+                    <li><a class="dropdown-item" href="#">Enfermería</a></li>
+                    <li><a class="dropdown-item" href="#">Veterinaria</a></li>
+
                 </ul>
-                <div>
-                    <input type="search" name="buscar" id="buscarExp" placeholder="buscar">
-                </div>
+            </div>
+            <div>
+                <input type="search" name="buscar" id="buscarExp" placeholder="buscar">
+            </div>
         </section>
         <!-- expositores con sus descripciones -->
         <section class="expositores">
-            
-            <span>
                 <div>
-                    <img src="../medios/20.png" alt="">
-                    <h3>Daniela Castro.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quod vitae molestias accusamus blanditiis! Debitis est, corporis dignissimos dolore eligendi voluptatibus omnis quia, nostrum, doloribus aut dolor saepe. Nostrum, reiciendis!</p>
-                    <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><img src="../medios/instagram.png" alt=""></a>
-                    <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img src="../medios/facebook.png" alt=""></a>
-                    <a href="http://dradanielacastro.com" target="_blank" rel="noopener noreferrer"><img src="../medios/logo internet.png" alt=""></a>
-                </div>
-                <div>
-                    <img src="../medios/19.png" alt="">
-                    <h3>Marta Perez.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quod vitae molestias accusamus blanditiis! Debitis est, corporis dignissimos dolore eligendi voluptatibus omnis quia, nostrum, doloribus aut dolor saepe. Nostrum, reiciendis!</p>
-                    <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><img src="../medios/instagram.png" alt=""></a>
-                </div>
-                <div>
-                    <img src="../medios/22.png" alt="">
-                    <h3>Karla Medellín.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quod vitae molestias accusamus blanditiis! Debitis est, corporis dignissimos dolore eligendi voluptatibus omnis quia, nostrum, doloribus aut dolor saepe. Nostrum, reiciendis!</p>
-                    <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><img src="../medios/instagram.png" alt=""></a>
-                    <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img src="../medios/facebook.png" alt=""></a>
-                    <a href="http://tiktok.com" target="_blank" rel="noopener noreferrer"><img src="../medios/tiktok-ge517af2ad_1280.png" alt=""></a>
+                    <div class="card cardExpositores">
+                        <img src="../medios/5.png" class="card-img-top" alt="...">
+                        <div class="card-body cardExpoBody">
+                            <h3 class="card-title">Nair Da Fonseca</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quod
+                                vitae molestias accusamus
+                                blanditiis! Debitis est, corporis dignissimos dolore eligendi voluptatibus omnis quia,
+                                nostrum,
+                                doloribus aut dolor saepe. Nostrum, reiciendis!</p>
+                            <div>
+                                <a href="http://instagram.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/instagram.png" alt=""></a>
+                                <a href="http://facebook.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/facebook.png" alt=""></a>
+                                <a href="http://dradanielacastro.com" class="" target="_blank"
+                                    rel="noopener noreferrer"><img src="../medios/logo internet.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardExpositores">
+                        <img src="../medios/4.png" class="card-img-top" alt="...">
+                        <div class="card-body cardExpoBody">
+                            <h3 class="card-title">Paz Belén Soto</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quod
+                                vitae molestias accusamus
+                                blanditiis! Debitis est, corporis dignissimos dolore eligendi voluptatibus omnis quia,
+                                nostrum,
+                                doloribus aut dolor saepe. Nostrum, reiciendis!</p>
+                            <div>
+                                <a href="http://instagram.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/instagram.png" alt=""></a>
+                                <a href="http://facebook.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/facebook.png" alt=""></a>
+                                <a href="http://dradanielacastro.com" class="" target="_blank"
+                                    rel="noopener noreferrer"><img src="../medios/logo internet.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardExpositores">
+                        <img src="../medios/3.png" class="card-img-top" alt="...">
+                        <div class="card-body cardExpoBody">
+                            <h3 class="card-title">Rodolfo Neira</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quod
+                                vitae molestias accusamus
+                                blanditiis! Debitis est, corporis dignissimos dolore eligendi voluptatibus omnis quia,
+                                nostrum,
+                                doloribus aut dolor saepe. Nostrum, reiciendis!</p>
+                            <div>
+                                <a href="http://instagram.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/instagram.png" alt=""></a>
+                                <a href="http://facebook.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/facebook.png" alt=""></a>
+                                <a href="http://dradanielacastro.com" class="" target="_blank"
+                                    rel="noopener noreferrer"><img src="../medios/logo internet.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardExpositores">
+                        <img src="../medios/2.png" class="card-img-top" alt="...">
+                        <div class="card-body cardExpoBody">
+                            <h3 class="card-title">Ricardo Soto</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quod
+                                vitae molestias accusamus
+                                blanditiis! Debitis est, corporis dignissimos dolore eligendi voluptatibus omnis quia,
+                                nostrum,
+                                doloribus aut dolor saepe. Nostrum, reiciendis!</p>
+                            <div>
+                                <a href="http://instagram.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/instagram.png" alt=""></a>
+                                <a href="http://facebook.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/facebook.png" alt=""></a>
+                                <a href="http://dradanielacastro.com" class="" target="_blank"
+                                    rel="noopener noreferrer"><img src="../medios/logo internet.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardExpositores">
+                        <img src="../medios/20.png" class="card-img-top" alt="...">
+                        <div class="card-body cardExpoBody">
+                            <h3 class="card-title">Daniela Castro</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quod
+                                vitae molestias accusamus
+                                blanditiis! Debitis est, corporis dignissimos dolore eligendi voluptatibus omnis quia,
+                                nostrum,
+                                doloribus aut dolor saepe. Nostrum, reiciendis!</p>
+                            <div>
+                                <a href="http://instagram.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/instagram.png" alt=""></a>
+                                <a href="http://facebook.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/facebook.png" alt=""></a>
+                                <a href="http://dradanielacastro.com" class="" target="_blank"
+                                    rel="noopener noreferrer"><img src="../medios/logo internet.png" alt=""></a>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="card cardExpositores">
+                        <img src="../medios/19.png" class="card-img-top" alt="...">
+                        <div class="card-body cardExpoBody">
+                            <h3 class="card-title">Marta Perez</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quod
+                                vitae molestias accusamus
+                                blanditiis! Debitis est, corporis dignissimos dolore eligendi voluptatibus omnis quia,
+                                nostrum,
+                                doloribus aut dolor saepe. Nostrum, reiciendis!</p>
+                            <div>
+                                <a href="http://instagram.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/instagram.png" alt=""></a>
+                                <a href="http://facebook.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/facebook.png" alt=""></a>
+                                <a href="http://dradanielacastro.com" class="" target="_blank"
+                                    rel="noopener noreferrer"><img src="../medios/logo internet.png" alt=""></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card cardExpositores">
+                        <img src="../medios/22.png" class="card-img-top" alt="...">
+                        <div class="card-body cardExpoBody">
+                            <h3 class="card-title">Karla Medellín</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quod
+                                vitae molestias accusamus
+                                blanditiis! Debitis est, corporis dignissimos dolore eligendi voluptatibus omnis quia,
+                                nostrum,
+                                doloribus aut dolor saepe. Nostrum, reiciendis!</p>
+                            <div>
+                                <a href="http://instagram.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/instagram.png" alt=""></a>
+                                <a href="http://facebook.com" class="" target="_blank" rel="noopener noreferrer"><img
+                                        src="../medios/facebook.png" alt=""></a>
+                                <a href="http://dradanielacastro.com" class="" target="_blank"
+                                    rel="noopener noreferrer"><img src="../medios/logo internet.png" alt=""></a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-
-            </span>
-
         </section>
 
     </main>
@@ -101,16 +263,24 @@
         <img src="../medios/logoletrasblancas.png" alt="logo Salud de la Nueva Era">
         <!-- iconos de redes sociales -->
 
-        <span>
-            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img src="../medios/facebook.png" alt="link a Facebook"></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="../medios/instagram.png" alt="link a Instagram"></a>
-        </span>
+        <div>
+            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img src="../medios/facebook.png"
+                    alt="link a Facebook"></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="../medios/instagram.png"
+                    alt="link a Instagram"></a>
+        </div>
         <!-- copyright y condiciones -->
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit officiis voluptate ut reprehenderit sit a corrupti in, qui, ratione minus quidem repellat ipsa repellendus placeat soluta nostrum temporibus illo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aspernatur et praesentium voluptatum est quidem magni, quia impedit officiis aliquam cum eveniet? Reiciendis suscipit voluptatum deserunt quam ea repellat assumenda quo minima aspernatur, et officia aperiam quibusdam maxime veniam velit deleniti natus aliquid nostrum molestias non amet. Adipisci et eaque accusantium repellat deserunt aut aliquid quibusdam deleniti provident quasi, praesentium fuga rem. Sed excepturi modi distinctio quod eligendi ipsum, maiores, dicta quas omnis fugit vero molestiae sapiente dolore quasi! Expedita libero, laudantium esse quasi voluptatum eveniet autem exercitationem sapiente nam consequuntur, omnis reiciendis illo deserunt voluptatem distinctio amet magni tempora officiis ullam vitae nihil iste possimus ad at. Ut voluptate necessitatibus quidem dolor, odit maxime porro fugit qui nisi ad soluta rem assumenda quas excepturi et architecto accusamus beatae dolorem sunt reprehenderit expedita delectus, libero praesentium. Sint ab enim, commodi rem ipsam necessitatibus nulla, totam laboriosam nihil dolore suscipit quisquam dolor consequatur! Nisi numquam officiis, excepturi nostrum voluptates placeat. Sit ea amet veniam, consequuntur consectetur perferendis qui ratione cumque quidem quo vel, quod est nesciunt. Voluptatem illo vel qui, recusandae perferendis dolorem voluptate quibusdam. Error, sequi? Non dolorum magnam est illo similique, laborum dicta possimus sit, nesciunt, maxime provident exercitationem?
+        </p>
 
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>

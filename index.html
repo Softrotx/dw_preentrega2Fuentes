@@ -20,7 +20,7 @@
     <header class="sticky-top">
         <!-- Logo + nombre -->
 
-        <nav class="navbar navbar-expand-lg menuPrincipal">
+        <nav class="navbar navbar-expand-lg logo">
             <div class="">
                 <a class="navbar-brand" href="#">
                     <img src="./medios/logo.png" alt="Logo" width="40" class="">
@@ -28,15 +28,17 @@
                 </a>
             </div>
             <!-- menu central & burger -->
+        </nav>
+        <nav class="navbar navbar-expand-lg menuPrincipal">
             <div class="botonMenu">
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse menuPrincipal" id="navbarNav">
+                <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
+                            <a class="nav-link" aria-current="page"
                                 href="./pages/expositores.html">Expositores</a>
                         </li>
                         <li class="nav-item">
@@ -51,24 +53,32 @@
                     </ul>
                 </div>
             </div>
-            <!-- menu lateral -->
-            <div class="menuSecundario">
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Login / Registro</button>
+        </nav>
+        <!-- menu lateral -->
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+        <nav class="navbar menuSecundario">
+            <div class="menuSecundario coloresHover">
+                <button class="btn btn-primary coloresHover" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cuenta</button>
+
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight"
                     aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                        <h2 class="offcanvas-title" id="offcanvasRightLabel">Login</h2>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="nav flex-column">
                             <li>
-                                <a href="./pages/cuenta.html">Cuenta</a>
+                                <form id="loginUser" class="login">
+                                    <input type="email" name="inputEmail" id="inputEmail" placeholder="Ingrese su correo">
+                                    <input type="password" name="inputPassword" id="inputPassword" placeholder="Ingrese su contraseña">
+                                    <button href="./pages/cuenta.html" type="submit">Ingresar</button>
+                                </form>
+                                <a href="./pages/registro.html">Registrar cuenta</a>
                             </li>
                             <li>
-                                <a href="./pages/checkout.html">Checkout</a>
+                                <a class="checkOut" href="./pages/checkout.html">Checkout</a>
                             </li>
                         </ul>
 
@@ -78,65 +88,21 @@
             </div>
 
         </nav>
-
-        <!-- <a href="#"><img src="./medios/marcalogocolor.png" alt="logo Salud de la Nueva Era"></a> menú principal -->
-        <!--         <nav class=" menuPrincipal">
-            <ul>
-                <li><a href="./pages/expositores.html">Expositores</a>
-                </li>
-                <li>
-                    <a href="./pages/clases.html">Clases</a>
-                </li>
-                <li>
-                    <a href="./pages/talleres.html">Talleres</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav> -->
-        <!-- menú secundario -->
-        <!--<nav class="menuSecundario">
-            <ul>
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Login / Registro</button>
-
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="nav flex-column">
-                            <li>
-                                <a href="./pages/cuenta.html">Cuenta</a>
-                            </li>
-                            <li>
-                                <a href="./pages/checkout.html">Checkout</a>
-                            </li>
-                        </ul>
-                        
-                    </div>
-                </div>
-
-            </ul>
-        </nav> -->
-
     </header>
     <main>
         <section class="videoPromesa">
             <!-- video con texto abajo -->
             <video src="./medios/cambiemos esto.mp4" autoplay></video>
-            <section class="promesa">
+        </section>
+
+        <section class="promesa">
                 <h1>
                     Lorem ipsum dolor sit amet.
                 </h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores facere laborum iusto quia dolorem
                     esse officiis cupiditate reiciendis consequuntur nulla.</p>
-            </section>
+         </section>
 
-        </section>
         <section class="infoRegistro">
             <!-- imagen con texto y registro a la derecha -->
             <div class="infoRegistroLeft">
@@ -149,81 +115,24 @@
                 <a href="./pages/registro.html">¡Registrate!</a>
             </div>
         </section>
-
-        </section>
         <!-- mensajes de las personas en carrusel -->
-        <section class=" container-xl">
-
-            <div id="carouselExampleFade" class="carousel slide carousel-fade w-50" data-bs-ride="carousel">
+        <section class="container-xl">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner testimonios">
-                    <div class="carousel-item active ">
-                        <img src="./medios/testimonios/testimonio1.png" class="d-block w-100 bg-body "
-                            data-bs-interval="10000" alt="...">
+                    <div class="carousel-item active">
+                        <img src="./medios/testimonios/testimonio1.png" class="d-block bg-body "
+                            data-bs-interval="50000" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./medios/testimonios/testimonio2.png" class="d-block w-100 bg-body"
-                            data-bs-interval="10000" alt="...">
+                        <img src="./medios/testimonios/testimonio2.png" class="d-block bg-body"
+                            data-bs-interval="50000" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./medios/testimonios/testimonio3.png" class="d-block w-100 bg-body"
-                            data-bs-interval="10000" alt="...">
+                        <img src="./medios/testimonios/testimonio3.png" class="d-block bg-body"
+                            data-bs-interval="50000" alt="...">
                     </div>
                 </div>
             </div>
-
-
-
-            <!-- <div class="testimonios">
-                <div>
-                    <img class="img" src="./medios/sherley.png" alt="foto perfil de usuaria">
-                    <h3 class="nombre">Sherley Allanic</h3>
-                    <p class="texto">
-                        "Las que he visto me han encantado, mucha información valiosa, yo he cambiado mi estilo de vida
-                        para manejar mis enfermedades, y he aprendido que la medicina tradicional es básicamente para
-                        tratar emergencias pero no para tratarme de por vida. Así que busque un médico funcional, que me
-                        ayude a tratar mis condiciones".
-                    </p>
-                </div>
-                <div>
-                    <img class='img' src="./medios/tete.png" alt="foto perfil de usuaria">
-                    <h3 class="nombre">Tete</h3>
-                    <p class="texto">
-"Siempre por crianza he sido asidua al uso de la hierbas y uso alternativo. Tengo 71 años y mis exámenes todos normales. No tomo medicamentos. Me gustaron las charlas que he visto. Especialmente aprendí cosas nuevas con mis mascotas".</p>
-
-                </div>
-
-                <div>
-                    <img class='img' src="./medios/teresa.png" alt="foto perfil de usuaria">
-                    <h3 class="nombre">Teresa</h3>
-                    <p class="texto">
-                        "Ha sido una maravillosa experiencia, poder ver y escuchar personas reales que impactan
-                        positivamente. Mil gracias a los organizadores; los temas y los profesionales, la conducción, en
-                        fin, la sinergia que se ha formado es maravillosa, gracias de corazón.
-                        Y para quienes no han podido ver los vídeos los invito de verdad a que hagan la tarea,
-                        oportunidades como ésta no se presentan siempre, son muchas horas diarias pero lo que aprendes
-                        es para tu vida y bienestar, ánimo!".</p>
-                </div>
-
-                <div>
-                    <img class='img' src="./medios/daniela.png" alt="foto perfil de usuaria">
-                    <h3 class="nombre">DaniCastro</h3>
-                    <p class="texto">
-                        "Me siento muy bendecida de ser parte de este movimiento!!!!!Que tengo la certeza que nos llevará a ser una humanidad despierta, empoderada y llena de amor. Una medicina que está al servicio del ser humano de forma integral y de nuestra madre tierra".
-                    </p>
-                </div>
-                <div>
-                    <img class='img' src="./medios/pamela.png" alt="foto perfil de usuaria">
-                    <h3 class="nombre">Pamela</h3>
-                    <p class="texto">
-                        "Hola, soy pamela escribo desde patagonia, soy paramedico y estoy terminando mi procesos de
-                        formación de cristaloterapia.. Me encantó este espacio me alegra mucho saber que hay personas
-                        que ven al paciente como un ser holistico y que no todo es la medicina convencional, qué los
-                        tiempos nos han hecho evolucionar y que habemos personas que estamos incertas en el sistema de
-                        salud actual qué podemos tener otra mirada y otra manera de servir en la salud".
-                    </p>
-                </div>
-
-            </div> -->
         </section>
 
     </main>
@@ -233,16 +142,15 @@
         <img src="./medios/logoletrasblancas.png" alt="logo Salud de la Nueva Era">
         <!-- iconos de redes sociales -->
 
-        <span>
+        <div>
             <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><img src="./medios/facebook.png"
                     alt="link a Facebook"></a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="./medios/instagram.png"
                     alt="link a Instagram"></a>
-        </span>
+        </div>
         <!-- copyright y condiciones -->
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit officiis voluptate ut reprehenderit sit
-            a corrupti in, qui, ratione minus quidem repellat ipsa repellendus placeat soluta nostrum temporibus illo.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aspernatur et praesentium voluptatum est quidem magni, quia impedit officiis aliquam cum eveniet? Reiciendis suscipit voluptatum deserunt quam ea repellat assumenda quo minima aspernatur, et officia aperiam quibusdam maxime veniam velit deleniti natus aliquid nostrum molestias non amet. Adipisci et eaque accusantium repellat deserunt aut aliquid quibusdam deleniti provident quasi, praesentium fuga rem. Sed excepturi modi distinctio quod eligendi ipsum, maiores, dicta quas omnis fugit vero molestiae sapiente dolore quasi! Expedita libero, laudantium esse quasi voluptatum eveniet autem exercitationem sapiente nam consequuntur, omnis reiciendis illo deserunt voluptatem distinctio amet magni tempora officiis ullam vitae nihil iste possimus ad at. Ut voluptate necessitatibus quidem dolor, odit maxime porro fugit qui nisi ad soluta rem assumenda quas excepturi et architecto accusamus beatae dolorem sunt reprehenderit expedita delectus, libero praesentium. Sint ab enim, commodi rem ipsam necessitatibus nulla, totam laboriosam nihil dolore suscipit quisquam dolor consequatur! Nisi numquam officiis, excepturi nostrum voluptates placeat. Sit ea amet veniam, consequuntur consectetur perferendis qui ratione cumque quidem quo vel, quod est nesciunt. Voluptatem illo vel qui, recusandae perferendis dolorem voluptate quibusdam. Error, sequi? Non dolorum magnam est illo similique, laborum dicta possimus sit, nesciunt, maxime provident exercitationem?
         </p>
 
 
