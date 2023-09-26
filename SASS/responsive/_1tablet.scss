@@ -1,0 +1,32 @@
+@media only screen and (max-width: 991px) {
+    .infoRegistroLeft{
+        width: 100%;
+    }
+    .infoRegistroRight{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    header{
+        flex-wrap: wrap;
+    }
+    .logo{
+        flex: 1;
+        order: 1;
+    }
+    .menuSecundario{
+        order:2;
+    }
+
+    .menuPrincipal {
+        order: 3;
+    }
+
+    .videoPromesa video {
+        width: 100%;
+        
+    }
+    .carousel{
+        width: 80%;
+    }
+
+}

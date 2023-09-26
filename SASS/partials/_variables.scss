@@ -1,0 +1,21 @@
+
+/* font-family: 'Indie Flower', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Indie+Flower&display=swap');
+
+
+// Variables y mixins
+$azulOs: #163d5b;
+$verdeCl: #a2ccc2;
+$verdeOs: #2d8281;
+$rosaCl: #e6b8c2;
+$rosaOs: #c77881;
+
+
+@mixin flex ($direccion, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+

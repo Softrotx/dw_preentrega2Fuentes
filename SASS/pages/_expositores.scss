@@ -1,0 +1,95 @@
+/* expositores[line] */
+
+.categorias {
+    
+    margin-top: 30px;
+    font-size: 1.2em;
+    width:95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input{
+        font-size: 1.5em;
+        background-color: #fff;
+        color: black;
+        width: 100%;
+    
+    }
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 100%;
+    }
+    ul li {
+        list-style-type: none;
+        font-size: 2em;
+    }
+    
+}
+.dropdown a{
+    font-size: 1.5em;
+    background-color: #fff;
+    color: black;
+    width: 100%;
+
+}
+.dropdown:active{
+    background-color: $azulOs;
+}
+.dropdown-item:hover{
+    font-weight: 600;
+
+}
+.dropdown-item:active{
+    background-color: $azulOs;
+    color: white;
+
+}
+
+.expositores div{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-around;
+}
+.cardExpositores{
+    width: 400px;
+    border: 1px;
+    display: flex;
+    margin: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: $verdeOs;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.75);
+}
+/* .cardExpositores:hover{
+    width: 450px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.75);
+    
+} */
+.cardExpositores img{
+    width: 250px;
+    margin: 15px 0px;
+}
+.cardExpoBody{
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    div{
+        display: flex;
+        justify-content: center;
+    
+        
+    }
+    a img {
+        width: 50px;
+        margin: 0 4px;
+        
+        :hover {
+            width: 60px;
+            margin: 0 4px;
+            
+        }
+    }
+}

@@ -1,0 +1,80 @@
+
+.clases{
+    font-size: 1.5rem;
+    margin: 40px 20px;
+    width: 90%;
+    @include flex (row, center, flex-start, wrap);
+    h2{
+        margin: 0px;
+        text-align: start;
+        
+}
+}
+.videoTitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    button{
+        width: 130px;
+        padding: 5px 20px;
+        border-radius: 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 1.5em;
+    }
+
+}
+
+.descripcionVideo{
+    
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    width: 90%;
+    margin-top: 30px;
+    p{
+        font-size: 1em;
+    }
+}
+
+.imgVideo{
+    margin-right: 20px;
+    img{
+        width: 100%;
+    }
+    
+}
+.tituloVideo{
+    width: 50%;
+    img{
+    width: 150px;
+    }
+    
+}
+
+.recomendados{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1em;
+
+}
+
+.recomVideos{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0px;
+    
+    
+    
+}
+.cardRecom{
+    width: 300px;
+    margin: 0px 30px;
+}
